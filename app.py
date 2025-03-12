@@ -33,7 +33,6 @@ def bereken_vervanging(huidig_voedingsmiddel, huidige_hoeveelheid, vervangend_vo
         return None
 
 # Streamlit UI
-
 huidig_voedingsmiddel = st.selectbox("Kies het huidige voedingsmiddel", list(voedingsmiddelen_kcal.keys()))
 huidige_hoeveelheid = st.number_input("Hoeveel gram/milliliter eet je nu?", min_value=1.0, step=1.0)
 vervangend_voedingsmiddel = st.selectbox("Kies het vervangende voedingsmiddel", list(voedingsmiddelen_kcal.keys()))
