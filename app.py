@@ -1,6 +1,11 @@
 import streamlit as st
 import pandas as pd
 
+st.set_page_config(page_title="Voedingskeuze Calculator", layout="wide")
+st.markdown(
+    "<style>iframe { width: 100%; height: 600px; }</style>", unsafe_allow_html=True
+)
+
 # Dataset: Voedingsmiddelen en kcal per gram
 voedingsmiddelen_kcal = {
     "Basmati rijst (ongekookt)": 3.6,
